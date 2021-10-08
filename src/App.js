@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="App">
       <Button type="primary">Primary Button</Button>
+      <Button type="primary">Second Button</Button>
+
     </div>
   );
 }
