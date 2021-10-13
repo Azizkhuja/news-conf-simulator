@@ -1,18 +1,22 @@
 import "antd/dist/antd.css";
 import "./App.css";
-import { Layout, Row } from "antd";
+import { Row, Col } from "antd";
 
 import Navbar from "./components/Navbar/Navbar";
-// import Question from "./components/Question/Question";
+import Questions from "./components/Question/Questions";
 
 function App() {
   return (
-    <Layout>
-      <Row justify="center">
-        <Navbar />
-        {/* <Question /> */}
-      </Row>
-    </Layout>
+    <div className="app-container">
+      <div className="container">
+        <Row justify="center">
+          <Navbar />
+        </Row>
+        <Row justify="center">
+          <Questions />
+        </Row>
+      </div>
+    </div>
   );
 }
 

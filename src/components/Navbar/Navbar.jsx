@@ -1,16 +1,13 @@
-import { Layout, Row, Col, Typography } from "antd";
+import { Typography } from "antd";
+import "./style.css";
 
 const { Title } = Typography;
 
 const Navbar = () => {
   return (
-    <Layout>
-      <Row justify="center">
-        {/* <Col span={24}> */}
-        <Title>News Simulation</Title>
-        {/* </Col> */}
-      </Row>
-    </Layout>
+    <div className="navbar-container">
+      <Title>News Simulation</Title>
+    </div>
   );
 };
 
