@@ -4,7 +4,7 @@ This project helps simulate the press conference for media relations specialists
 
 ## How It Works
 
-The player goes through a set of cases, each offering three decision choices. 
+The player goes through a set of cases, each offering the detailed question, illustration and three decision choices. After each chosen decision, by clicking the button, the application displays the result page. The result page shows the scores of the user on three criteria: participants' mood, coverage in the media, and the satisfaction of the top management. The scores are shown with the help of  Following the score update, the illustration comes as well as "Continue" button. The last case's result page announces the final outcome and gives the opportunity to restart the game with the "Try Again" button.   
 
 
 Use Cases
