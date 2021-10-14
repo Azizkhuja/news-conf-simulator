@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# About
+This project helps simulate the press conference for media relations specialists who want to prepare for moderating this kind of event. The scenario of the game is based on Xazina Bank, a fictional bank who want to launch new services, thus brought together journalists to release these updates.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+How It Works
+The player goes through a set of cases, each offering the detailed question, illustration and three decision choices. After each chosen decision, by clicking the button, the application displays the result page. The result page shows the scores of the user on three criteria: participants' mood, coverage in the media, and the satisfaction of the top management. The scores are shown with the help of Following the score update, the illustration comes as well as "Continue" button. The last case's result page announces the final outcome and gives the opportunity to restart the game with the "Try Again" button.
 
-## Available Scripts
+# Use Cases
 
-In the project directory, you can run:
+Title: Simulate news conference Primary Actor: User Success Scenario: The application shows the instructions and questions. The user chooses one of the multiple answers to the questions. The user gains or loses scores in respect of his/her/their answers.
 
-### `npm start`
+User Story As a user, I want to test my skills as a moderator at a news conference, keeping a balance among all stakeholders.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Nouns: Application Instructions Questions Answers Scores
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Potential objects/components:
 
-### `npm test`
+Verbs: shows chooses gains and loses
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Potential functions: showQuestion() chooseButton() updateScores()
