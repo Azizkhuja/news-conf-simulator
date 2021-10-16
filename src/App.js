@@ -12,6 +12,7 @@ import Questions from "./components/Question/Questions";
 
 function App() {
   const [gameState, setGameState] = useState("menu");
+  const [score, setScore] = useState(0);
   return (
     <div className="app-container">
       <div className="container">
@@ -19,7 +20,7 @@ function App() {
           <Navbar />
         </Row>
         <Row justify="center">
-          <QuestionContext.Provider value={{ gameState, setGameState }}>
+          <QuestionContext.Provider value={{ gameState, setGameState, score, setScore }}>
             {gameState === "menu" && <MainMenu />}
             {gameState === "question" && <Question />}
             {gameState === "endGame" && <EndGame />}
