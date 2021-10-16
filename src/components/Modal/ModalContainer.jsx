@@ -22,7 +22,7 @@ const ModalContainer = () => {
         Next Question
       </Button>
       <Modal title="Mood: Respect:" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} width={800}>
-        <p>Публика в восторге, на танцполе еще больше людей. «ТОПОЛИНЫЙ ПУХ, ЖАРА, ИЮЛЬ!»</p>
+        <p>Test </p>
       </Modal>
     </>
   );
