@@ -1,8 +1,10 @@
 import React, { useState, useContext } from "react";
 import { QuestionContext } from "../Helpers/Contexts";
-
 import AllQuestion from "../Helpers/data";
 import "./style.css";
+import { Card } from "antd";
+
+const { Meta } = Card;
 
 // let result = data.map(a => a.id);
 // console.log(result);
@@ -27,7 +29,9 @@ const Questions = () => {
   return (
     <div className="questions">
       <h4>{AllQuestion[currentQuestion].question}</h4>
-      {/* <img src={AllQuestion[currentQuestion].image} alt={AllQuestion[currentQuestion].id} /> */}
+      <div className="questions-image-container">
+        <img className="questions-image" src={AllQuestion[currentQuestion].image} alt={AllQuestion[currentQuestion].id} />
+      </div>
       <div className="options">
         <button onClick={() => setOptionChosen("A")}>{AllQuestion[currentQuestion].optionA}</button>
         <button onClick={() => setOptionChosen("B")}>{AllQuestion[currentQuestion].optionB}</button>

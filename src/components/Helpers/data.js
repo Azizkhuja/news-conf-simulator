@@ -2,7 +2,7 @@ let Questions = [
   {
     id: 1,
     question: "Everything is set, the speakers have arrived and ready. And, ta-da, the clock shows that it is 15:00. A few journalists are talking to each other at the entrance and haven‘t taken their seats yet. What would you do?",
-    image: "./1.png",
+    image: "https://images.pexels.com/photos/2872418/pexels-photo-2872418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     optionA: "Wait until they finish",
     optionB: "Call them and ask them to be respectful",
     optionC: "Just start the conference without any comments to those who haven‘t joined yet",
@@ -12,7 +12,7 @@ let Questions = [
   {
     id: 2,
     question: "The speakers started well, but a member of the bank‘s board of governors, who you weren‘t able to rehearse with, started reading out a written speech from the paper... What would you do?",
-    image: "./2.png",
+    image: "https://images.pexels.com/photos/3768182/pexels-photo-3768182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     optionA: "Interrupt and suggest him/her to cut the long story short",
     optionB: "Do nothing and wait until s/he finishes",
     optionC: "Let him or her finish and comment on why the board member had to have a longer and detailed speech, mentioning that XB makes sure that media understand the vectors of its development",
@@ -22,7 +22,7 @@ let Questions = [
   {
     id: 3,
     question: "As the Q&A opens, a hack of a very critical news agency and a radio journalist raise their hands. What would you do?",
-    image: "./3.png",
+    image: "https://images.pexels.com/photos/3772623/pexels-photo-3772623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     optionA: "Let the radio correspondent speak, ignoring the critical journalist",
     optionB: "Let the critical journalist ask a question and let the board member answer it",
     optionC: "Let the critical journalist ask a question and volunteer to answer it yourself",
@@ -32,7 +32,7 @@ let Questions = [
   {
     id: 4,
     question: "A blogger from Namangan asks a question: 'Why are managers of XB‘s regional branches are lending money only if you bribe them with the 10 percent of the loan sum?' What would you do?",
-    image: "./4.png",
+    image: "https://images.pexels.com/photos/4050350/pexels-photo-4050350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     optionA: "Say: 'I‘m sorry. We are here to discuss our new services, we do not comment on that'",
     optionB: "Say: 'One of the reasons why we are launching the innovative services today is to make our work transparent and avoid corruption. Now anyone can get loans online without visting our branches or talking to loans officers. If you come up to me after the event and report the corruption cases at particular branches, we will investigate it. Thank you.'",
     optionC: "Claim that it is impossible that XB‘s any branch is corrupt. You accuse the blogger to be a gossip medium that spreads the fake news and call them for being more ethical and professional",
@@ -42,7 +42,7 @@ let Questions = [
   {
     id: 5,
     question: "Journalists started asking different questions: 'Why are the loan interest rates are so high? What are the eligibility requirements for mortgage? Why are the limits for cashing out money from the bank cards?' What would you do?",
-    image: "./4.png",
+    image: "https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     optionA: "Tell journalists not to ask general questions, but the ones that are relevant to today‘s presentation only",
     optionB: "Announce that you will get a couple of last questions, telling them that they can ask additional questions during the coffee break",
     optionC: "Tell the journalists that they can find answers to their questions on the company website, mentioning that this event is for discussions over the new services only",

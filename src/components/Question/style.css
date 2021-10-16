@@ -28,3 +28,13 @@
   border-radius: 10px;
   border: none;
 }
+.questions-image-container {
+  height: 300px;
+  width: 400px;
+}
+.questions-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
