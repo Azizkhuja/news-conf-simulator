@@ -2,10 +2,9 @@ import React, { useState, useContext } from "react";
 import { QuestionContext } from "../Helpers/Contexts";
 import AllQuestion from "../Helpers/data";
 import "./style.css";
-import { Card } from "antd";
+import ModalContainer from "../Modal/ModalContainer";
 
-const { Meta } = Card;
-
+// Getter info from data file
 // let result = data.map(a => a.id);
 // console.log(result);
 
@@ -26,6 +25,9 @@ const Questions = () => {
     }
     setGameState("endGame");
   };
+  const opennerModal = () => {
+    <ModalContainer />;
+  };
   return (
     <div className="questions">
       <h4>{AllQuestion[currentQuestion].question}</h4>
@@ -42,9 +44,16 @@ const Questions = () => {
           Finish Quiz
         </button>
       ) : (
-        <button className="question-next-btn" onClick={nextQuestion}>
-          Next Question
+        <button
+          className="question-next-btn"
+          onClick={() => {
+            nextQuestion();
+            opennerModal();
+          }}
+        >
+          {<ModalContainer />}
         </button>
+        // <ModalContainer />
       )}
     </div>
   );
