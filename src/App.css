@@ -8,3 +8,16 @@
     height: 100%;
     width: 100%;
 }
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.options button{
+    padding: 10px;
+    outline: none;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}

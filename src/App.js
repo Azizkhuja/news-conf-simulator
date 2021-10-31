@@ -13,11 +13,11 @@ let items = [
       id: 1,
       question: "Everything is set, the speakers have arrived and ready. And, ta-da, the clock shows that it is 15:00. A few journalists are talking to each other at the entrance and haven‘t taken their seats yet. What would you do?",
       image: "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG98ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
-      option: {
-          optionA: "Wait until they finish", 
-          optionB: "Call them and ask them to be respectful", 
-          optionB: "Just start the conference without any comments to those who haven‘t joined yet"
-      },
+      option: [
+           "Wait until they finish", 
+           "Call them and ask them to be respectful", 
+           "Just start the conference without any comments to those who haven‘t joined yet"
+      ],
       result: [
           "The journalists who were already sitting didn‘t understand what everybody was waiting for. They were sorry for their time waiting for their unethical colleagues. The bank‘s board members and your management was angry, because you were not handling the situations, or, to be precise, the journalists.",
           "Journalists hate when someone preaches them. Not only latecomers, but the audience in general didn‘t like your bossy attitude. Some instagrammed the stories about this moment with #bossisinthehouse. However, you were able to please your management who are on the same page with you regarding 'showing journalists‘ place'.",
@@ -57,7 +57,7 @@ let items = [
   {
       id: 4,
       question: "A blogger from Namangan asks a question: 'Why are managers of XB‘s regional branches are lending money only if you bribe them with the 10 percent of the loan sum?' What would you do?",
-      image: "./4.png",
+      image: "https://images.unsplash.com/photo-1609813744174-a0df83d477fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80",
       option: [
           "Say: 'I‘m sorry. We are here to discuss our new services, we do not comment on that'", 
           "Say: 'One of the reasons why we are launching the innovative services today is to make our work transparent and avoid corruption. Now anyone can get loans online without visting our branches or talking to loans officers. If you come up to me after the event and report the corruption cases at particular branches, we will investigate it. Thank you.'", 
@@ -72,7 +72,7 @@ let items = [
   {
       id: 5,
       question: "Journalists started asking different questions: <i>'Why are the loan interest rates are so high? What are the eligibility requirements for mortgage? Why are the limits for cashing out money from the bank cards?'</i> What would you do?",
-      image: "./4.png",
+      image: "https://images.unsplash.com/photo-1590555150080-ae617459daae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80",
       option: [
           "Tell journalists not to ask general questions, but the ones that are relevant to today‘s presentation only", 
           "Announce that you will get a couple of last questions, telling them that they can ask additional questions during the coffee break", 

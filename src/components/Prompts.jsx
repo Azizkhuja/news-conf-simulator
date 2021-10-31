@@ -4,16 +4,13 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
 const Prompts = ({items}) => {
-    const [prompt, setPrompt] = useState(2);
-    // const renderedItems = items.map(item => {
-    //     return (
-    //         <div key={item.id}>
-    //             <Button variant="outlined">
-    //                 {item.question}
-    //             </Button>
-    //         </div>
-    //     )
-    // })
+    const [prompt, setPrompt] = useState(0);
+    const nextQuestion = () => {
+        setPrompt(prompt + 1);
+    }
+    const seeResults = () => {
+        console.log("teet");
+    }
     return (
         <Grid container direction="column" alignItems="center">
             <Typography variant="h2">News Simulation</Typography>
@@ -21,11 +18,16 @@ const Prompts = ({items}) => {
             <div className="image-container">
                 <img src={items[prompt].image} alt={items[prompt].id} />
             </div>
-            <div className="options">
-                <button>{items[prompt].option[0]}</button>
-                <button>{items[prompt].option[1]}</button>
-                <button>{items[prompt].option[2]}</button>
+            {prompt == items.length -1 ? (
+                <button onClick={seeResults}>See results</button>
+            ) : (
+                <div className="options">
+                <Button variant="outlined" sx={{ m: 1 }} onClick={() => nextQuestion()}>{items[prompt].option[0]}</Button>
+                <Button variant="outlined" sx={{ m: 1 }} onClick={() => nextQuestion()}>{items[prompt].option[1]}</Button>
+                <Button variant="outlined" sx={{ m: 1 }} onClick={() => nextQuestion()}>{items[prompt].option[2]}</Button>
             </div>
+            )}
+            
         </Grid>
     )
 }
