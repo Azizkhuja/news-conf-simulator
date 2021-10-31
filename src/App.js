@@ -6,17 +6,18 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
 import Prompts from './components/Prompts';
+// import Options from './components/Options';
 
 let items = [
   {
       id: 1,
       question: "Everything is set, the speakers have arrived and ready. And, ta-da, the clock shows that it is 15:00. A few journalists are talking to each other at the entrance and haven‘t taken their seats yet. What would you do?",
-      image: "./1.png",
-      option: [
-          "Wait until they finish", 
-          "Call them and ask them to be respectful", 
-          "Just start the conference without any comments to those who haven‘t joined yet"
-      ],
+      image: "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGhvdG98ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+      option: {
+          optionA: "Wait until they finish", 
+          optionB: "Call them and ask them to be respectful", 
+          optionB: "Just start the conference without any comments to those who haven‘t joined yet"
+      },
       result: [
           "The journalists who were already sitting didn‘t understand what everybody was waiting for. They were sorry for their time waiting for their unethical colleagues. The bank‘s board members and your management was angry, because you were not handling the situations, or, to be precise, the journalists.",
           "Journalists hate when someone preaches them. Not only latecomers, but the audience in general didn‘t like your bossy attitude. Some instagrammed the stories about this moment with #bossisinthehouse. However, you were able to please your management who are on the same page with you regarding 'showing journalists‘ place'.",
@@ -26,7 +27,7 @@ let items = [
   {
       id: 2,
       question: "The speakers started well, but a member of the bank‘s board of governors, who you weren‘t able to rehearse with, started reading out a written speech from the paper... What would you do?" ,
-      image: "./2.png",
+      image: "https://images.unsplash.com/photo-1495745966610-2a67f2297e5e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
       option: [
           "Interrupt and suggest him/her to cut the long story short", 
           "Do nothing and wait until s/he finishes", 
@@ -41,7 +42,7 @@ let items = [
   {
       id: 3,
       question: "As the Q&A opens, a hack of a very critical news agency and a radio journalist raise their hands. What would you do?",
-      image: "./3.png",
+      image: "https://images.unsplash.com/photo-1606893995103-a431bce9c219?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1364&q=80",
       option: [
           "Let the radio correspondent speak, ignoring the critical journalist", 
           "Let the critical journalist ask a question and let the board member answer it", 
@@ -88,15 +89,15 @@ let items = [
 
 
 function App() {
-  
   return (
     <div className="container">
       <CssBaseline />
       <Container maxWidth="xl">
         <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} >
           <Grid container direction="column" alignItems="center" justifyContent="center">
-            <Grid item xs={12} sm={12} md={12} xl={12}>
+            <Grid item>
               <Prompts items={items} />
+              {/* <Options options={items} /> */}
             </Grid>
           </Grid>
         </Box>

@@ -1,5 +1,4 @@
 # About
-<<<<<<< HEAD
 
 This project helps simulate the press conference for media relations specialists who want to prepare for moderating this kind of event. The scenario of the game is based on Xazina Bank, a fictional bank who want to launch new services, thus brought together journalists to release these updates.      
 
@@ -71,4 +70,3 @@ Potential objects/components:
 Verbs: shows chooses gains and loses
 
 Potential functions: showQuestion() chooseButton() updateScores()
->>>>>>> 4aa6e91cfac2ad9d50e989517c201a7602e91662
